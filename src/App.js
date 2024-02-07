@@ -1,4 +1,6 @@
 import logoiw from './assets/logo-iw.png'
+import './styles.css'
+
 
 function App() {
   return (
@@ -12,11 +14,11 @@ function App() {
             </span>
 
             <div className="wrap-input">
-              <input type="email" />
+              <input className="input" type="email" />
               <span className="focus-input" data-placeholder="Email"></span>
             </div>
             <div className="wrap-input">
-              <input type="password" />
+              <input className="input" type="password" />
               <span className="focus-input" data-placeholder="Senha"></span>
             </div>
             <div className="container-login-form-btn">
@@ -24,7 +26,7 @@ function App() {
             </div>
             <div className="text-center">
               <span className="txt1">Não Possui conta?</span>
-              <a className="txt2" href="">Criar conta.</a>
+              <a className="txt2" href="#">Criar conta.</a>
             </div>
 
           </form>
