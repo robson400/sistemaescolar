@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
 }
 
 .container {
@@ -41,6 +44,7 @@
 .login-form-title {
     display: block;
     font-size: 30px;
+    font-weight: 700;
     color: azure;
 
     line-height: 1.2;
@@ -131,6 +135,14 @@
 }
 
 .input:focus + .focus-input::before {
+    width: 100%;
+}
+
+.has-val + .focus-input::after {
+    top: -15px;
+}
+
+.has-val + .focus-input::before {
     width: 100%;
 }
 
